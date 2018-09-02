@@ -1,0 +1,33 @@
+{
+  "name": "numerology",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Vlad Frolov <frolvlad@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "prettier --no-semi --single-quote --print-width 100 --trailing-comma es5 --write",
+        "git add"
+      ]
+    }
+  }
+}
